@@ -38,14 +38,14 @@ const Form = (props) => {
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Add patient..." onChange={handleName} required />
             <select onChange={handleSex} required>
-                <option value="" readonly="true" hidden="true" selected>sex</option>
+                {/* <option  readonly="true" hidden="true" selected>sex</option> */}
                 <option value="male">He/him</option>
                 <option value="female">she/her</option>
                 <option value="others">Others</option>
             </select>
             <input type="number" placeholder="age?" onChange={handleAge} required />
             <select onChange={handleAffected} required>
-                <option value="" readonly="true" hidden="true" selected>covid status</option>
+                {/* <option  readonly="true" hidden="true" selected>covid status</option> */}
                 <option value="positive">Positive</option>
                 <option value="negative">Negative</option>
             </select>
