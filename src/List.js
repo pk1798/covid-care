@@ -1,10 +1,25 @@
+import './App.css'
+import Details from "./Details"
+
 const List = (props) => {
 
-    const patients = props.patients;
+
+        const removePatient = (data) => {
+            props.delete(data)
+        }
+
+        const handleUpdate = (id) => {
+            props.edit(id);
+        }
+
+        const updateForm = (data , id) => {
+            props.update(data, id)
+        }
+
 
     return ( 
         <>
-        {patients.map(patient=><h1>{patient}</h1>)}
+        {props.patients.map(patient=> <Details patient={patient} remove={removePatient} updatePatient={handleUpdate} edit={updateForm} /> )}
         </>
      );
 }
