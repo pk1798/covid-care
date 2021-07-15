@@ -19,7 +19,7 @@ const List = (props) => {
 
     return ( 
         <>
-        {props.patients.map(patient=> <Details patient={patient} remove={removePatient} updatePatient={handleUpdate} edit={updateForm} /> )}
+        {props.patients.map(patient=> <Details key={patient.id} patient={patient} remove={removePatient} updatePatient={handleUpdate} edit={updateForm} /> )}
         </>
      );
 }
