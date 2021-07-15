@@ -25,7 +25,7 @@ const Details = (props) => {
            <button onClick={removePatient} value={props.patient.id}>Discharge</button>
            <button onClick={handleRemove} value={props.patient.id}>EDIT</button>
         </div>
-        <div className="edit-form" className={props.patient.update? "hide" : "show"}> <UpdateForm patients={props.patient} update={handleUpdateForm} id={props.patient.id}/> </div>
+        <div className={props.patient.update? "hide" : "show"}> <UpdateForm patients={props.patient} update={handleUpdateForm} id={props.patient.id}/> </div>
         </>
      );
 }
