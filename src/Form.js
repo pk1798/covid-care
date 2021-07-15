@@ -33,6 +33,8 @@ const Form = (props) => {
 
 
     return ( 
+        <>
+        <h2>Add new patient details</h2>
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Add patient..." onChange={handleName} required />
             <select onChange={handleSex} required>
@@ -47,8 +49,9 @@ const Form = (props) => {
                 <option value="positive">Positive</option>
                 <option value="negative">Negative</option>
             </select>
-            <button>ADD</button>
+            <button className="button-bg">ADD</button>
         </form>
+        </>
      );
 }
  

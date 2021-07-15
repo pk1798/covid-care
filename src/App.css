@@ -1,7 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .hide {
   display: none;
 }
 
 .show {
   display: block;
+}
+
+.App {
+  display: flex;
+}
+
+.header {
+  width: 25%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #4e3fae;
+  font-family: Montserrat;
+  font-style: normal;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.header h1 {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.header p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container {
+  font-family: Montserrat;
+  font-style: normal;
+  width: 85%;
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+input,
+select {
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 12px;
+  padding: 20px 12px;
+  width: 15%;
+  margin: 20px 25px;
+}
+
+button {
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border: none;
+  outline: none;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.button-bg {
+  padding: 20px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+.button-sm {
+  padding: 20px 40px;
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.patient-details {
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

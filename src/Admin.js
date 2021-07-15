@@ -17,10 +17,12 @@ const Admin = () => {
 
     const handleEdit = (id) => {
         setPatient(patients.map(patient => patient.id === id? { ...patient, update: !patient.update} : patient))
+        console.log(patients)
     }
 
     const handleUpdate = (details , id) => {
-        setPatient(patients.map(patient => patient.id === id? {...details, name: details.name, status: details.isAffected, sex: details.sex, age: details.age , update: !details.update} : patient))
+        setPatient(patients.map(patient => patient.id === id? {...details, name: details.name, status: details.status, sex: details.sex, age: details.age} : patient))
+        console.log(details)
     }
 
     // console.log(patients)

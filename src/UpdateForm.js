@@ -27,13 +27,14 @@ const UpdateForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.update({name: patient, age: age, sex: sex, status: isAffected} , props.id)
-        console.log(props.id)
+        props.update({name: patient, age: age, sex: sex, status: isAffected, update: true, id: props.id} , props.id)
     }
 
     
 
     return ( 
+        <>
+        <h2>Edit the details of {props.patients.name}</h2>
         <form onSubmit={handleSubmit} value={props.patients.id}>
         <input type="text" onChange={updateName}   value={patient}  required />
         <select  required value={sex} onChange={updateSex}>
@@ -48,8 +49,9 @@ const UpdateForm = (props) => {
             <option value="positive">Positive</option>
             <option value="negative">Negative</option>
         </select>
-        <button>Update</button>
+        <button className="button-bg">Update</button>
     </form>
+    </>
      );
 }
  
