@@ -22,7 +22,7 @@ const Admin = () => {
 
     const handleUpdate = (details , id) => {
         setPatient(patients.map(patient => patient.id === id? {...details, name: details.name, status: details.status, sex: details.sex, age: details.age} : patient))
-        console.log(details)
+        alert("Details updated!")
     }
 
     // console.log(patients)
